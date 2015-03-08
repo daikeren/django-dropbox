@@ -1,5 +1,5 @@
-# django-dropbox
-> Version 0.0.1
+# django-dropbox-redux
+> Version 0.0.5
 
 # What
 
@@ -19,4 +19,4 @@ additionally you must need to set the next settings:
 
     DROPBOX_ACCESS_TOKEN = 'xxx'
 
-if you don't have `DROPBOX_CONSUMER_KEY` or `DROPBOX_CONSUMER_SECRET` you will need to create an Dropbox app at [Dropbox for Developers](https://www.dropbox.com/developers). And then generated access token for your app. Then set `DROPBOX_ACCESS_TOKEN` settings in `settings.py`.
+You will need to create an Dropbox app at [Dropbox for Developers](https://www.dropbox.com/developers). And then generated access token for your app. Then set `DROPBOX_ACCESS_TOKEN` settings in `settings.py`.
