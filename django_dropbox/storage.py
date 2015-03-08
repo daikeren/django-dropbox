@@ -24,9 +24,7 @@ class DropboxStorage(Storage):
     """
 
     def __init__(self, location='/Public'):
-        session = DropboxSession(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TYPE, locale=None)
-        session.set_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-        self.client = DropboxClient(session)
+        self.client = DropboxClient(ACCESS_TOKEN)
         self.account_info = self.client.account_info()
         self.location = location
         self.base_url = 'http://dl.dropbox.com/u/{uid}/'.format(**self.account_info)
